@@ -4,7 +4,7 @@
             .row.flex-column
                 .card-mb-4.rounded-lg.bg-white.p-4.row.align-items-center.justify-content-between.shadow-sm.mb-4
                     .col.col-md-3
-                        img(src="../assets/images/boots.jpg", alt="alt", height="200").rounded-lg
+                        img(src="~@/assets/images/boots.jpg", alt="alt", height="200").rounded-lg
                     .col.d-flex.align-items-center.col-md-3.px-0
                         strong.w-100.text-center Adidas Easy Boost
                     .col-12.col-md-3.col-sm-4.mt-md-0.my-3
@@ -19,7 +19,7 @@
                         button.btn.btn-danger Удалить
                 .card-mb-4.rounded-lg.bg-white.p-4.row.align-items-center.justify-content-between.shadow-sm.mb-4
                     .col.col-md-3
-                        img(src="../assets/images/boots.jpg", alt="alt", height="200").rounded-lg
+                        img(src="~@/assets/images/boots.jpg", alt="alt", height="200").rounded-lg
                     .col.d-flex.align-items-center.col-md-3.px-0
                         strong.w-100.text-center Adidas Easy Boost
                     .col-12.col-md-3.col-sm-4.mt-md-0.my-3

@@ -19,6 +19,7 @@
 import NavLink from './components/Link.vue';
 
 export default {
+  name: 'App',
   components: {
     NavLink
   }

@@ -1,3 +1,4 @@
 module.exports = {
-    publicPath: 'cart'
+    publicPath: './',
+    outputDir: 'dist/'
 }

@@ -12,13 +12,15 @@ Vue.use(VueRouter)
     component: Home
   },
   {
-    path: '/Cart',
+    path: '/cart',
     name: 'Cart',
     component: Cart
   }
 ]
 
 const router = new VueRouter({
+  mode: 'hash',
+  base: process.env.BASE_URL,
   routes
 })
 
