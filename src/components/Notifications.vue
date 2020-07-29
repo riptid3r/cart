@@ -1,6 +1,6 @@
 <template lang="pug">
     .notifications.d-flex.flex-column
-        transition(name="fade")
+        transition-group(name="fade")
             .notification.rounded-lg.bg-success.pl-4.pr-5.py-3.d-flex.align-items-center.mb-2(key="a" v-if="a")
                 .d-flex.flex-column
                     h4.text-white.mb-1 Уведомление
