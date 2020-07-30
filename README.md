@@ -1,4 +1,13 @@
-# cart
+# Single Page Application − Магазин товаров с корзиной
+
+При разработке использовалось:
+```
+Webpack − Vue CLI (Vuex, Router)
+Bootstrap 4
+Pug
+SCSS
+JavaScript
+```
 
 ## Project setup
 ```
@@ -14,6 +23,3 @@ npm run serve
 ```
 npm run build
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
