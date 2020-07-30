@@ -1,11 +1,12 @@
 <template lang="pug">
   .app
-    .navbar.navbar-dark.bg-light.shadow-sm.py-3
+    .navbar.navbar-dark.shadow-sm.py-3
       .container.d-flex.justify-content-between
-        nav-link(icon="store" title="Магазин")/
+        nav-link(icon="store" title="Главная")/
         nav-link(icon="cart" title="Корзина" to="cart")/
-    router-view/
-    footer.text-muted.bg-warnng.shadow-sm.py-3
+    notifications/
+    router-view.mb-5/
+    footer.text-muted.shadow-sm.py-3.footer.bg-light
       .container
         p.mb-0 Created by riptid3r
         p 2020
@@ -17,11 +18,13 @@
 
 <script>
 import NavLink from './components/Link.vue';
+import Notifications from './components/Notifications.vue';
 
 export default {
   name: 'App',
   components: {
-    NavLink
+    NavLink,
+    Notifications
   }
 }
 </script>

@@ -1,23 +1,19 @@
 <template lang="pug">
-    .notifications.d-flex.flex-column
-        transition-group(name="fade")
-            .notification.rounded-lg.bg-success.pl-4.pr-5.py-3.d-flex.align-items-center.mb-2(key="a" v-if="a")
-                .d-flex.flex-column
-                    h4.text-white.mb-1 Уведомление
-                    p.text-light.mb-0 Описание уведомления
+    transition-group(name="fade", tag="div", class="notifications d-flex flex-column-reverse")
+        .notification.rounded-lg.bg-success.pl-4.pr-5.py-3.d-flex.align-items-center.mb-2(v-for="(notif, index) in notifications" :key="index")
+            .d-flex.flex-column
+                h4.text-white.mb-1 {{ notif.title }}
+                p.text-light.mb-0 {{ notif.desc }}
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
-    data() {
-        return {
-            a: false
-        }
-    },
-    created() {
-        setTimeout(() => {
-            this.a = true
-        }, 1000);
+    computed: {
+        ...mapState([
+            'notifications'
+        ])
     }
 }
 </script>
