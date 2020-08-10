@@ -1,5 +1,7 @@
 # Single Page Application − Магазин товаров с корзиной
 
+Live Demo: https://riptid3r.github.io/cart/#/
+
 При разработке использовалось:
 ```
 Webpack − Vue CLI (Vuex, Router)
