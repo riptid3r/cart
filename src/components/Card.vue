@@ -1,6 +1,6 @@
 <template lang="pug">
 	.col-md-4
-    .card.mb-4
+		.card.mb-4
 			img.w-100.cover.px-3(:src="card.image", alt="image", height="280")
 			.card-body
 				.row.align-items-center.justify-content-between.px-2
