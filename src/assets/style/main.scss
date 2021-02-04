@@ -11,10 +11,13 @@
     right: 0;
 }
 
-.fade-enter-active, .fade-leave-active {
-    transition: transform .3s ease, opacity .5s; 
+.fade-enter-active,
+.fade-leave-active {
+    transition: transform .3s ease, opacity .5s;
 }
-.fade-enter, .fade-leave-to {
+
+.fade-enter,
+.fade-leave-to {
     opacity: 0;
     transform: translateX(200px);
 }
@@ -23,10 +26,12 @@ html {
     position: relative;
     min-height: 100%;
 }
+
 body {
     margin-bottom: 80px;
     background-color: #fff;
 }
+
 .footer {
     position: absolute;
     bottom: 0;
